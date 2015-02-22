@@ -21,7 +21,7 @@
 
 		<div>
 			<h1>Thank you!</h1>
-			<p>Welcome to Nerdluv, User!</p>
+			<p>Welcome to Nerdluv, <?php echo $_POST["name"]; ?>!</p>
 			<p>Now <a href="matches.php">log in to see your matches!</a></p>
 		</div>
 
