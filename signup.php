@@ -1,43 +1,71 @@
-<!DOCTYPE html>
 <html>
-  <head>
-    <link type='text/css' rel='stylesheet' href='nerdluv.css'/>
-    <title>PHP!</title>
-    <!--Add a header with picture, logo is broken on elc-->
-  </head>
-  <body>
-  	<div>
-	<form> <!-- set the form action to our php submit file-->
+<head>
+	<meta charset="utf-8" />
+		
+		<!-- instructor-provided CSS and JavaScript links; do not modify -->
+		<link href="https://webster.cs.washington.edu/images/nerdluv/heart.gif" type="image/gif" rel="shortcut icon" />
+		<link href="https://webster.cs.washington.edu/css/nerdluv.css" type="text/css" rel="stylesheet" />
+		
+		<script src="http://ajax.googleapis.com/ajax/libs/prototype/1.7.0.0/prototype.js" type="text/javascript"></script>
+		<script src="https://webster.cs.washington.edu/js/nerdluv/provided.js" type="text/javascript"></script>
+	<title>Signup</title>
+</head>
+<body>
+	<div id="bannerarea">
+			<img src="https://webster.cs.washington.edu/images/nerdluv/nerdluv.png" alt="banner logo" /> <br />
+			where meek geeks meet
+		</div>
+	<form action = "signup-submit.php" method ="post">
 		<fieldset>
-		<label for = "name">Name:</label>
-		<input type = "text" name = "name" value = "" id = "name"/>
+			<legend> New User Signup:</legend>
+		<label>Name:</label>
+			<input type="text" name="nameBox" maxlength="16">
 		<br>
-		<label for = "radio">Gender:</label>
-		<input type = "radio" name = "sex" value = "male">Male
-		<input type = "radio" name = "sex" value = "female" checked>Female
+		<label>Gender:</label>
+			<input type="radio" name="sex" value="male" checked>Male
+			<input type="radio" name="sex" value="female">Female
 		<br>
-		<label for = "age">Age:</label>
-		<input type = "text" name = "age" value = "" id = "age"/>
+		<label>Age:</label>
+			<input type="text" name="age" maxlength="2" size="6">
 		<br>
-		<label for = "personality">Personality Type:</label>
-		<input type = "text" name = "personality" value = "" id = "personality"/>
+		<label>Personality Type:</label>
+			<input type="text" name="personType" maxlength="4" size="6">
+			<a href="http://www.humanmetrics.com/cgi-win/JTypes2.asp">(Don't know your type?)</a>
 		<br>
-		<label for = "Favorite OS">Favorite OS:</label>
-		<select name="Favorite OS">
-		<option value="Windows">Bill Gates</option>
-		<option value="Mac OSX">Steve Jobs</option>
-		<option value="Linux">Linux Guy</option>
-		</select>
+		<label>Favorite OS:</label>
+			<select>
+				<option>Windows</option>
+				<option>Mac OS X</option>
+				<option>Linux</option>
+			</select>
+		<label>Seeking Age:</label>
+			<input type ="text" name="min" maxlength="2" size="6"> to <input type="text" name="max" maxlength="2" size="6">
 		<br>
-		<label for = "Seeking Age">Seeking Age:</label>
-		<input type = "text" name = "min" value = "" id = "min"/>
-		<label> to </label>
-		<input type = "text" name = "max" value = "" id = "max"/>
-		<br>
-		<label>Sign Up:</label>
-	<!--add a submit button-->
-	</fieldset>
+		<input type="submit" name="infoSub" value="Sign Up">
+		</fieldset>
 	</form>
-</div>
+	<div>
+			<p>
+				This page is for single nerds to meet and date each other!  Type in your personal information and wait for the nerdly luv to begin!  Thank you for using our site.
+			</p>
+			
+			<p>
+				Results and page (C) Copyright NerdLuv Inc.
+			</p>
+			
+			<ul>
+				<li>
+					<a href="index.php">
+						<img src="https://webster.cs.washington.edu/images/nerdluv/back.gif" alt="icon" />
+						Back to front page
+					</a>
+				</li>
+			</ul>
+		</div>
+
+		<div id="w3c">
+			<a href="https://webster.cs.washington.edu/validate-html.php"><img src="https://webster.cs.washington.edu/images/w3c-html.png" alt="Valid HTML" /></a>
+			<a href="https://webster.cs.washington.edu/validate-css.php"><img src="https://webster.cs.washington.edu/images/w3c-css.png" alt="Valid CSS" /></a>
+		</div>
 </body>
 </html>
