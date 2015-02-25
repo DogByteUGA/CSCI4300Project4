@@ -1,5 +1,28 @@
 <!DOCTYPE html>
 <html>
+
+<!-- writes in values from the form into single.txt file.!-->
+<?php
+$file = 'singles.txt';
+$current = file_get_contents($file);
+$current .= $_POST["nameBox"];
+$current .= ",";
+if($_POST["sex"] == "male")  $current .="m"; 
+else $current .= "f";
+$current .= ",";
+$current .= $_POST["age"];
+$current .= ",";
+$current .= strtoupper($_POST["personType"]);
+$current .= ",";
+$current .= $_POST["compType"];
+$current .= ",";
+$current .= $_POST["min"];
+$current .= ",";
+$current .= $_POST["max"];
+$current .= ",\n";
+file_put_contents($file, $current);
+?>
+
 	<head>
 		<title>NerdLuv</title>
 		
@@ -21,7 +44,7 @@
 
 		<div>
 			<h1>Thank you!</h1>
-			<p>Welcome to Nerdluv, <?php echo $_POST["name"]; ?>!</p>
+			<p>Welcome to Nerdluv, <?php echo $_POST["nameBox"]; ?>!</p>
 			<p>Now <a href="matches.php">log in to see your matches!</a></p>
 		</div>
 
