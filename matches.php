@@ -1,21 +1,51 @@
-<!DOCTYPE html>
 <html>
-  <head>
-    <link type='text/css' rel='stylesheet' href='nerdluv.css'/>
-    <title>PHP!</title>
-    <!--Add a header with picture, logo is broken on elc-->
-  </head>
-  <body>
-  	<div>
-	<form> <!-- set the form action to our php submit file-->
+<head>
+	<meta charset="utf-8" />
+		
+		<!-- instructor-provided CSS and JavaScript links; do not modify -->
+		<link href="https://webster.cs.washington.edu/images/nerdluv/heart.gif" type="image/gif" rel="shortcut icon" />
+		<link href="https://webster.cs.washington.edu/css/nerdluv.css" type="text/css" rel="stylesheet" />
+		
+		<script src="http://ajax.googleapis.com/ajax/libs/prototype/1.7.0.0/prototype.js" type="text/javascript"></script>
+		<script src="https://webster.cs.washington.edu/js/nerdluv/provided.js" type="text/javascript"></script>
+	<title>Signup</title>
+</head>
+<body>
+	<div id="bannerarea">
+			<img src="https://webster.cs.washington.edu/images/nerdluv/nerdluv.png" alt="banner logo" /> <br />
+			where meek geeks meet
+		</div>
+	<form action = "matches.php" method ="get">
 		<fieldset>
-		<label for = "name">Name:</label>
-		<input type = "text" name = "name" value = "" id = "name" size = "16"/>
+			<legend> Returning User:</legend>
+		<label>Name:</label>
+			<input type="text" name="nameBox" maxlength="16">
 		<br>
-		<button style = type="submit"> <b>View My Matches</b></button> <!-- add submit function on onclick-->
-	<!--add a submit button-->
-	</fieldset>
+		<input type="submit" name="infoSub" value="View My Matches">
+		</fieldset>
 	</form>
-</div>
+	<div>
+			<p>
+				This page is for single nerds to meet and date each other!  Type in your personal information and wait for the nerdly luv to begin!  Thank you for using our site.
+			</p>
+			
+			<p>
+				Results and page (C) Copyright NerdLuv Inc.
+			</p>
+			
+			<ul>
+				<li>
+					<a href="index.php">
+						<img src="https://webster.cs.washington.edu/images/nerdluv/back.gif" alt="icon" />
+						Back to front page
+					</a>
+				</li>
+			</ul>
+		</div>
+
+		<div id="w3c">
+			<a href="https://webster.cs.washington.edu/validate-html.php"><img src="https://webster.cs.washington.edu/images/w3c-html.png" alt="Valid HTML" /></a>
+			<a href="https://webster.cs.washington.edu/validate-css.php"><img src="https://webster.cs.washington.edu/images/w3c-css.png" alt="Valid CSS" /></a>
+		</div>
 </body>
 </html>
