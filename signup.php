@@ -33,11 +33,12 @@
 			<a href="http://www.humanmetrics.com/cgi-win/JTypes2.asp">(Don't know your type?)</a>
 		<br>
 		<label>Favorite OS:</label>
-			<select>
-				<option>Windows</option>
-				<option>Mac OS X</option>
-				<option>Linux</option>
+			<select name="compType" onchange="document.getElementById('compType_text').value=this.options[this.selectedIndex].text">
+				<option value="Windows">Windows</option>
+				<option value="Mac OS X">Mac OS X</option>
+				<option value="Linux">Linux</option>
 			</select>
+			 <input type="hidden" name="compType_text" id="compType_text" value="" />
 		<label>Seeking Age:</label>
 			<input type ="text" name="min" maxlength="2" size="6"> to <input type="text" name="max" maxlength="2" size="6">
 		<br>
