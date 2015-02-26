@@ -59,7 +59,7 @@ file_put_contents($file, $current);
 			
 			<ul>
 				<li>
-					<a href="index.php">
+					<a href="index.html">
 						<img src="https://webster.cs.washington.edu/images/nerdluv/back.gif" alt="icon" />
 						Back to front page
 					</a>
