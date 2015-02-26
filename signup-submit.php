@@ -19,7 +19,7 @@ $current .= ",";
 $current .= $_POST["min"];
 $current .= ",";
 $current .= $_POST["max"];
-$current .= ",\n";
+$current .= "\n";
 file_put_contents($file, $current);
 ?>
 
