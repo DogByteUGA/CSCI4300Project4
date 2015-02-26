@@ -47,6 +47,9 @@
 		while(!feof($singles)){
 			$line = fgets($singles);
 			$person = explode(",", $line);
+			if($person[0]==null){
+				break;
+			}
 			if ($person[1]!=$user[1]) {
 				if($person[2]<$user[6]){
 					if($person[2]>$user[5]){
