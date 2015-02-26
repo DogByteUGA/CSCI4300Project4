@@ -15,7 +15,7 @@
 			<img src="https://webster.cs.washington.edu/images/nerdluv/nerdluv.png" alt="banner logo" /> <br />
 			where meek geeks meet
 		</div>
-	<form action = "matches.php" method ="get">
+	<form action = "matches-submit.php" method ="get">
 		<fieldset>
 			<legend> Returning User:</legend>
 		<label>Name:</label>
