@@ -20,7 +20,7 @@
 			<legend> Returning User:</legend>
 		<strong><label>Name:</label></strong>
 			<input type="text" name="nameBox" maxlength="16">		
-			<br>
+			<br><br>
 		<input type="submit" name="infoSub" value="View My Matches">
 		</fieldset>
 	</form>
