@@ -81,14 +81,26 @@
 		if($valid == true){
 			file_put_contents($file, $current);
 		}
-
 		?>
 
+		<?php if($valid == false){ ?>
+		<div>
+			<h1>Error!</h1>
+			<p>We're sorry. You submitted invalid user information. Please go back and try again.</p>
+		</div>
+		<?php
+		}
+		?>
+
+		<?php if($valid == true){ ?>
 		<div>
 			<h1>Thank you!</h1>
 			<p>Welcome to Nerdluv, <?php echo $_POST["nameBox"]; ?>!</p>
 			<p>Now <a href="matches.php">log in to see your matches!</a></p>
 		</div>
+		<?php
+		}
+		?>
 
 		<div>
 			<p>
