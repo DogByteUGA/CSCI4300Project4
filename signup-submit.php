@@ -22,14 +22,13 @@
 
 <!-- writes in values from the form into single.txt file.!-->
 		<?php
-		$valid = false;
+		$valid = true;
 		$error = "Error!";
 		$file = 'singles.txt';
 
 		$current = file_get_contents($file);
-		if($_POST["nameBox"]!= ""){
+		if($_POST["nameBox"]!=""){
 			$current .= $_POST["nameBox"];
-			$valid = true;
 		}
 		else{
 			$valid = false;
@@ -42,29 +41,26 @@
 			$current .= "f";
 		}
 		$current .= ",";
-		if($_POST["age"] > 1){
+		if($_POST["age"] > 0){
 			$current .= $_POST["age"];
-			$valid = true;
 		}
 		else{
 			$valid = false;
 		}
 		$current .= ",";
-		if($_POST["personType"]!= ""){
+		if($_POST["personType"] != ""){
 			$current .= strtoupper($_POST["personType"]);
-			$valid = true;
 		}
 		else{
 			$valid = false;
 		}
 		$current .= ",";
-		if($_POST["compType"]!= ""){
+		if($_POST["compType"] != ""){
 			$current .= $_POST["compType"];
 		}
 		$current .= ",";
-		if($_POST["min"] > 1){
+		if($_POST["min"] > 0){
 			$current .= $_POST["min"];
-			$valid = true;
 		}
 		else{
 			$valid = false;
@@ -72,7 +68,6 @@
 		$current .= ",";
 		if($_POST["max"] > $_POST["min"]){
 			$current .= $_POST["max"];
-			$valid = true;
 		}
 		else{
 			$valid = false;
