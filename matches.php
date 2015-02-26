@@ -18,9 +18,9 @@
 	<form action = "matches-submit.php" method ="get">
 		<fieldset>
 			<legend> Returning User:</legend>
-		<label>Name:</label>
-			<input type="text" name="nameBox" maxlength="16">
-		<br>
+		<strong><label>Name:</label></strong>
+			<input type="text" name="nameBox" maxlength="16">		
+			<br>
 		<input type="submit" name="infoSub" value="View My Matches">
 		</fieldset>
 	</form>
