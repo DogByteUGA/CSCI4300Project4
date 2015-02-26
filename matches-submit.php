@@ -22,7 +22,7 @@
 		</div>
 		
 		<!-- your HTML output follows -->
-		
+		<div>
 		<?php 
 		$singles = fopen("singles.txt", "r") or die("Unable to open file!");
 		$user = $_GET["nameBox"];
@@ -43,6 +43,7 @@
 			die("The user was not found");
 			}
 			$singles = fopen("singles.txt", "r") or die("Unable to open file!");
+			echo "<h1>Matches for ".$_GET["nameBox"]."</h1>";
 		while(!feof($singles)){
 			$line = fgets($singles);
 			$person = explode(",", $line);
@@ -65,7 +66,7 @@
 		}
 		
 	 ?>
-
+	 </div>
 		<!-- shared page bottom HTML -->
 		<div>
 			<p>
