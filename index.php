@@ -1,6 +1,16 @@
+<!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8" />
+	<!--
+	CSE 154, Homework 4 (NerdLuv)
+	This provided file is the front page that links to two of the files
+	you are going to write, signup.php and matches.php.
+	You can modify this file as necessary to move redundant code out to common.php.
+	-->
+	
+	<head>
+		<title>NerdLuv</title>
+		
+		<meta charset="utf-8" />
 		
 		<!-- instructor-provided CSS and JavaScript links; do not modify -->
 		<link href="https://webster.cs.washington.edu/images/nerdluv/heart.gif" type="image/gif" rel="shortcut icon" />
@@ -8,23 +18,35 @@
 		
 		<script src="http://ajax.googleapis.com/ajax/libs/prototype/1.7.0.0/prototype.js" type="text/javascript"></script>
 		<script src="https://webster.cs.washington.edu/js/nerdluv/provided.js" type="text/javascript"></script>
-	<title>Signup</title>
-</head>
-<body>
-	<div id="bannerarea">
+	</head>
+
+	<body>
+		<div id="bannerarea">
 			<img src="https://webster.cs.washington.edu/images/nerdluv/nerdluv.png" alt="banner logo" /> <br />
 			where meek geeks meet
 		</div>
-	<form action = "matches-submit.php" method ="get">
-		<fieldset>
-			<legend> Returning User:</legend>
-		<strong><label>Name:</label></strong>
-			<input type="text" name="nameBox" maxlength="16">		
-			<br><br>
-		<input type="submit" name="infoSub" value="View My Matches">
-		</fieldset>
-	</form>
-	<div>
+
+		<div>
+			<h1>Welcome!</h1>
+
+			<ul>
+				<li>
+					<a href="signup.php">
+						<img src="https://webster.cs.washington.edu/images/nerdluv/signup.gif" alt="icon" />
+						Sign up for a new account
+					</a>
+				</li>
+
+				<li>
+					<a href="matches.php">
+						<img src="https://webster.cs.washington.edu/images/nerdluv/heartbig.gif" alt="icon" />
+						Check your matches
+					</a>
+				</li>
+			</ul>
+		</div>
+
+		<div>
 			<p>
 				This page is for single nerds to meet and date each other!  Type in your personal information and wait for the nerdly luv to begin!  Thank you for using our site.
 			</p>
@@ -47,5 +69,5 @@
 			<a href="https://webster.cs.washington.edu/validate-html.php"><img src="https://webster.cs.washington.edu/images/w3c-html.png" alt="Valid HTML" /></a>
 			<a href="https://webster.cs.washington.edu/validate-css.php"><img src="https://webster.cs.washington.edu/images/w3c-css.png" alt="Valid CSS" /></a>
 		</div>
-</body>
+	</body>
 </html>
